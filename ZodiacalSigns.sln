@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZodiacalSigns", "ZodiacalSigns\ZodiacalSigns.csproj", "{4C4C26ED-3968-4DDC-9416-977DE07AD669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{F77720F2-F335-4BB2-9A2B-D1AA34D6046C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C4C26ED-3968-4DDC-9416-977DE07AD669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4C26ED-3968-4DDC-9416-977DE07AD669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4C26ED-3968-4DDC-9416-977DE07AD669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4C26ED-3968-4DDC-9416-977DE07AD669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F77720F2-F335-4BB2-9A2B-D1AA34D6046C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77720F2-F335-4BB2-9A2B-D1AA34D6046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77720F2-F335-4BB2-9A2B-D1AA34D6046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77720F2-F335-4BB2-9A2B-D1AA34D6046C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B08B08AC-036F-4DFA-A4AB-ABCAB6356BBF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿@model Application.ViewModels.ZodiacalViewModel
+@{
+    ViewData["Title"] = "Zodiacal Signs";
+}
+
+@if (!string.IsNullOrWhiteSpace(ViewBag.result))
+{
+    <div class="alert alert-light text-center text-black" role="alert">
+        <div class="fs-4 text-black">
+            <p><strong>YOUR ZODIACAL SIGN IS</strong></p>
+        </div>        
+        <p class="fs-3">@ViewBag.result</p>
+    </div>
+}
+
+<div class="row">
+    <div class="col-6 offset-3" style="margin-top:80px;"> 
+        <div class="card">
+            <div class="card-header bg-danger text-black text-center">
+                <strong class="text-light">ZODIACAL GUESS</strong>
+            </div>
+            <div class="card-body text-center">
+                <form method="post" asp-controller="Zodiacal" asp-action="GuessSign">
+                    <div class="mb-3">
+                        <label asp-for="Day" class="form-label">Type your birth day:</label>
+                        <input asp-for="Day" class="form-control w-50" style="margin-left:145px;"/>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Month" class="form-label">Select your birth month:</label>                      
+                        <select asp-for="Month" class="form-select w-50" style="margin-left:145px; margin-bottom:40px;">
+                            <option value="1">January - 1</option>
+                            <option value="2">February - 2</option>
+                            <option value="3">March - 3</option>
+                            <option value="4">April - 4</option>
+                            <option value="5">May - 5</option>
+                            <option value="6">June - 6</option>
+                            <option value="7">July - 7</option>
+                            <option value="8">August - 8</option>
+                            <option value="9">September - 9</option>
+                            <option value="10">October - 10</option>
+                            <option value="11">November - 11</option>
+                            <option value="12">December - 12</option>
+                        </select>
+                    </div>
+                    <div >
+                        <button type="submit" class="btn btn-outline-primary mb-3"><strong>TELL ME MY SIGN</strong></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
